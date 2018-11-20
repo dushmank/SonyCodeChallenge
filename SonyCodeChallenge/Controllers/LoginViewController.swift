@@ -58,8 +58,7 @@ class LoginViewController: UIViewController {
         loginButton.backgroundColor = .white
         loginButton.layer.cornerRadius = 10.0
         loginButton.setTitle("Login", for: .normal)
-        loginButton.titleLabel?.textColor = .purple
-        loginButton.titleLabel?.textAlignment = .center
+        loginButton.setTitleColor(.purple, for: .normal)
         loginButton.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
         view.addSubview(loginButton)
         let loginButtonWidth = NSLayoutConstraint(item: loginButton, attribute: .width, relatedBy: .equal, toItem: loginTextField, attribute: .width, multiplier: 2.0, constant: 0.0)
